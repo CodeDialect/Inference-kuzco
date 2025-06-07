@@ -112,7 +112,6 @@ inference node start --code <your-worker-id>
 ## Official Resources
 
 -  [Epoch 3 Documentation](https://docs.devnet.inference.net/devnet-epoch-3/overview)  
--  [Inference Website](https://inference.net)  
--  [Inference Twitter/X](https://twitter.com/inferencenet)  
+-  [Inference Website](https://inference.net)
 
 ---
