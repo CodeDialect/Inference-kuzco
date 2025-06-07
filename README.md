@@ -69,7 +69,7 @@ apt update && apt install curl -y
 ## Install & Run (One Liner)
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/<your-user>/<your-repo>/main/setup-inference-node.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/codedialect/Inference-kuzco/main/setup-inference-node.sh)
 ```
 
 ---
