@@ -6,9 +6,22 @@ GREEN="\e[32m"
 YELLOW="\e[33m"
 RED="\e[31m"
 CYAN="\e[36m"
+NC='\033[0m'
 RESET="\e[0m"
 
 REQUIRED_PKGS=(sudo curl wget lsof pciutils screen)
+
+# BANNER
+echo -e "${GREEN}"
+cat << 'EOF'
+ ______              _         _                                             
+|  ___ \            | |       | |                   _                        
+| |   | |  ___    _ | |  ____ | | _   _   _  ____  | |_   ____   ____  _____ 
+| |   | | / _ \  / || | / _  )| || \ | | | ||  _ \ |  _) / _  ) / ___)(___  )
+| |   | || |_| |( (_| |( (/ / | | | || |_| || | | || |__( (/ / | |     / __/ 
+|_|   |_| \___/  \____| \____)|_| |_| \____||_| |_| \___)\____)|_|    (_____)
+EOF
+echo -e "${NC}"
 
 # Check for sudo or root
 echo -e "${YELLOW}Checking user privileges...${RESET}"
