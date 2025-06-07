@@ -57,14 +57,18 @@ else
   echo -e "${GREEN}CUDA is already installed.${RESET}"
 fi
 
-# Install Inference CLI from GitHubusercontent
-echo -e "${CYAN}Installing Inference Node CLI...${RESET}"
-curl -fsSL https://devnet.inference.net/install.sh | sh
-
 # Prompt for Worker ID
 echo -ne "${YELLOW}Enter your Worker ID (will be used with --code): ${RESET}"
 read -r WORKER_ID
 
+# Install Inference CLI from GitHubusercontent
+echo -e "${CYAN}Installing Inference Node CLI...${RESET}"
+curl -fsSL https://devnet.inference.net/install.sh | sh
+
+echo -e "${GREEN}🧹 Closing any existing 'inference' screen sessions...${NC}"
+screen -ls | grep -o '[0-9]*\.inference-node' | while read -r session; do
+  screen -S "${session%%.*}" -X quit
+done
 # Start node in screen session
 SESSION_NAME="inference-node"
 echo -e "${CYAN}Starting node in screen session '$SESSION_NAME'...${RESET}"
