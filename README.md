@@ -1,4 +1,3 @@
-
 # Inference DevNet Epoch 3 One-Click Node Setup
 
 Welcome to the **Inference DevNet Epoch 3**!
@@ -112,6 +111,6 @@ inference node start --code <your-worker-id>
 ## Official Resources
 
 -  [Epoch 3 Documentation](https://docs.devnet.inference.net/devnet-epoch-3/overview)  
--  [Inference Website](https://inference.net)
+-  [Inference Website](https://devnet.inference.net/)
 
 ---
